@@ -2,10 +2,21 @@ body.home-body {
   background-color: rgb(228, 230, 238);
 }
 
+/* ######## The big text in the middle of the page ######## */
 .jumbotron {
   text-align: center;
 }
 
+.jumbotron-container {
+  background: none;
+}
+
+.container-fluid {
+  background: rgb(198, 207, 214);
+  width: 100%;
+}
+
+/* ########### GRIEVENCE AND TRACK GREVIENCE Buttons ############ */
 .btn-col-1 {
   align-items: right;
   display: block;
@@ -19,30 +30,15 @@ button.complaint-btn {
 
 }
 
+.btn-col-2 {
+  margin-bottom: 2rem;
+}
+
 button.track-complaint-btn {
   margin: 0rem, 0rem, 2rem;
   background-color: rgb(61, 60, 60);
   border: none;
 }
-
-.jumbotron-container {
-  background: none;
-}
-
-.container-fluid {
-  background: rgb(198, 207, 214);
-  width: 100%;
-}
-
-/* .complaint-btn .track-complaint-btn {
-  margin: 10%;
-  margin: 2rem, 2rem;
-}
-
-.btn-col-1 .btn-col2 {
-  margin: 30px 30px;
-} */
-
 
 /* ##### Footer ##### */
 
@@ -71,27 +67,41 @@ button.track-complaint-btn {
 /* ######### MEDIA QUERY ########## */
 
 /* // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-  col-md-6 {
-    align-items: center;
+@media (max-width: 576px) {
+
+  .complaint-btn {
+    margin: auto;
+    display: block;
+    margin-left: none;
   }
 
-  body {
-    background-color: aqua;
+  .track-complaint-btn .complaint-btn {
+    margin: auto;
+    display: block;
   }
+
+
 }
 
 /* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  ...
+@media (max-width: 768px) {
+
+
+  .complaint-btn {
+    margin: auto;
+    display: block;
+    margin-left: none;
+  }
+
+  .track-complaint-btn {
+    margin: auto;
+    display: block;
+  }
+
 }
 
 /* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  ...
-}
+@media (min-width: 992px) {}
 
 /* // Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  ...
-}
+@media (min-width: 1200px) {}
