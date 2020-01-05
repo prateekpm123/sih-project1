@@ -44,6 +44,30 @@ button.track-complaint-btn {
 } */
 
 
+/* ##### Footer ##### */
+
+.footeds {
+  background-color: rgb(84, 85, 87);
+  border: rgb(80, 123, 160);
+  border-width: 1px;
+  border-style: solid;
+}
+
+.footer-leftside {
+  padding: 15px 15px;
+  background: none;
+}
+
+.footer-leftside p {
+  color: white;
+}
+
+.list-group-item {
+  background: none;
+  color: white;
+}
+
+
 /* ######### MEDIA QUERY ########## */
 
 /* // Small devices (landscape phones, 576px and up) */
