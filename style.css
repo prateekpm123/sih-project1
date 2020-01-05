@@ -1,0 +1,73 @@
+body.home-body {
+  background-color: rgb(228, 230, 238);
+}
+
+.jumbotron {
+  text-align: center;
+}
+
+.btn-col-1 {
+  align-items: right;
+  display: block;
+}
+
+button.complaint-btn {
+  margin-left: 10rem;
+  margin-bottom: 2rem;
+  background-color: rgb(61, 60, 60);
+  border: none;
+
+}
+
+button.track-complaint-btn {
+  margin: 0rem, 0rem, 2rem;
+  background-color: rgb(61, 60, 60);
+  border: none;
+}
+
+.jumbotron-container {
+  background: none;
+}
+
+.container-fluid {
+  background: rgb(198, 207, 214);
+  width: 100%;
+}
+
+/* .complaint-btn .track-complaint-btn {
+  margin: 10%;
+  margin: 2rem, 2rem;
+}
+
+.btn-col-1 .btn-col2 {
+  margin: 30px 30px;
+} */
+
+
+/* ######### MEDIA QUERY ########## */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  col-md-6 {
+    align-items: center;
+  }
+
+  body {
+    background-color: aqua;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  ...
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  ...
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  ...
+}
