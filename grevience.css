@@ -3,14 +3,37 @@ body.home-body {
   }
 
 
+/* ######### IMAGE SLIDER ######### */
+
+.image-slider {
+    height: 100px;
+    width: 20px;
+    margin: auto;
+}
+
+.w-100 {
+    width: 100px!important;
+}
+
+/* Trending */
+
+.trending {
+    margin-top: 3rem;
+    /* align-items: center; */
+    text-align:left;
+    /* margin: auto; */
+} 
+
 /* ####### CARDS OF COMPLIANTS TRENDING PAGE ######## */
 
 div.trending-cards-complaint {
-    margin: 5rem;
+    margin: 10px;
+    margin-top: none;
 }
 
 div.complaint-card-body {
     margin: 10px;
+    margin-top: none;
 }
 
 /* ##### Footer ##### */
