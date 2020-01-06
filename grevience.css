@@ -1,0 +1,38 @@
+body.home-body {
+    background-color: rgb(228, 230, 238);
+  }
+
+
+/* ####### CARDS OF COMPLIANTS TRENDING PAGE ######## */
+
+div.trending-cards-complaint {
+    margin: 5rem;
+}
+
+div.complaint-card-body {
+    margin: 10px;
+}
+
+/* ##### Footer ##### */
+
+.footeds {
+    background-color: rgb(84, 85, 87);
+    border: rgb(80, 123, 160);
+    border-width: 1px;
+    border-style: solid;
+  }
+  
+  .footer-leftside {
+    padding: 15px 15px;
+    background: none;
+  }
+  
+  .footer-leftside p {
+    color: white;
+  }
+  
+  .list-group-item {
+    background: none;
+    color: white;
+  }
+  
