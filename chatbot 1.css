@@ -1,0 +1,18 @@
+button.btn1 {
+    display: block;
+    margin: auto;
+    /* align-items: center; */
+}
+
+#para{
+    display: block;
+    margin: auto; 
+    text-align: center;
+}
+
+/* p,
+h1 {
+    display: block;
+    margin: auto;
+    /* align-items: cen
+} */
