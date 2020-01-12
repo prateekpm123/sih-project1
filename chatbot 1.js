@@ -15,14 +15,14 @@ var count = 0;
 function toCreateNewButton(count) {
 
     var num = answer2[count].length;
-    var test8 = document.getElementById('containers');
+    var test8 = document.getElementById('buttonrows');
     var newbutton = document.createElement('button');
     // alert('in the new button')
     for (var i = 0; i < 3; i++) {
         //   alert('in create button')
-        var test8 = document.getElementById('containers');
+        var test8 = document.getElementById('buttonrows');
         var newbutton = document.createElement('button');
-        newbutton.setAttribute("onclick", "buttoncounter()");
+        newbutton.setAttribute("onclick", "buttonClickCounter()");
         newbutton.className = "btn btn-primary btn1";
         newbutton.type = "button";
         // test8.appendChild(newbutton);
@@ -32,11 +32,11 @@ function toCreateNewButton(count) {
 }
 
 function removingExtraButtons(count) {
-    // alert('in the remove function')
+    alert('in the remove function')
     var parent = document.getElementById("buttonrows");
-    var child = document.getElementsByTagName("button");
+    var child = document.getElementsByClassName("btn1");
     var childn = child.length - 1;
-    for (var n = 1; n < 3; n++) {
+    for (var n = 0; n < 3; n++) {
         parent.removeChild(child[0]);
     }
 
@@ -60,6 +60,7 @@ function buttonClickCounter() {
     // alert("value of count in counter function"+count);
     // toCreateNewButton(num, count);
     toCreateNewButton(count);
+    removingExtraButtons(count);
 
 }
 
