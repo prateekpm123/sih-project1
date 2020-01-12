@@ -1,56 +1,71 @@
 var list = ["What is your complaint about", "what is your specialization",
     "Which year are you in "
 ];
-var answer1 = [
+var answer2 = [
     ["sakec", "somaiya", "vjti"],
-    ["it", "cs", "sxtc", "exc"],
-    ["1st", "2nd", "3rd", "4th"]
+    ["it", "cs", "sxtc"],
+    ["1st", "2nd", "3rd"],
+    ['meow','dog', 'cat']
 ];
 
 let para = document.getElementById('para');
 para.innerHTML = list[0];
 var count = 0;
 
- 
+function toCreateNewButton(count) {
+
+    var num = answer2[count].length;
+    var test8 = document.getElementById('containers');
+    var newbutton = document.createElement('button');
+    // alert('in the new button')
+    for (var i = 0; i < 3; i++) {
+        //   alert('in create button')
+        var test8 = document.getElementById('containers');
+        var newbutton = document.createElement('button');
+        newbutton.setAttribute("onclick", "buttoncounter()");
+        newbutton.className = "btn btn-primary btn1";
+        newbutton.type = "button";
+        // test8.appendChild(newbutton);
+        test8.appendChild(newbutton);
+        newbutton.innerHTML = answer2[count][i];
+    }
+}
+
+function removingExtraButtons(count) {
+    // alert('in the remove function')
+    var parent = document.getElementById("buttonrows");
+    var child = document.getElementsByTagName("button");
+    var childn = child.length - 1;
+    for (var n = 1; n < 3; n++) {
+        parent.removeChild(child[0]);
+    }
+
+}
+
+
+// Step 2 after : printing next question
+function nextQuestion(count) {
+    // for (var i = count; i < list.length; i++) {
+    para.innerHTML = list[count]; // count is 1 
+    // removingExtraButtons(count);
+    // }
+
+}
+
+// Step 1 after clicking the button 
 function buttonClickCounter() {
     
     count++;
     nextQuestion(count);
-    
-    var num = answer1[count].length;
-    toCreateNewButton(num, count);
-    // document.write(num);
-}
+    // alert("value of count in counter function"+count);
+    // toCreateNewButton(num, count);
+    toCreateNewButton(count);
 
-function nextQuestion(count) {
-    // for (var i = count; i < list.length; i++) {
-    para.innerHTML = list[count];
-    // }
 }
 
 
-function removingExtraButtons() {
-    var parent = document.getElementById("buttonrows");
-    var child = document.getElementsByTagName("button");
-    parent.removeChild(child);
-}
 
-function toCreateNewButton(num) {
-    for(var n = 0; n<num; n++)
-    {
 
-        // var elem = document.getElementsByTagName('button');
-        // delete.getElementsByTagName('button'); 
-        removingExtraButtons();
 
-        var test8 = document.getElementById('buttonrows');
-        var newbutton = document.createElement('button');
-        newbutton.className = "btn btn-primary btn1";
-        // newbutton.onclick = "buttonClickCounter()";
-        newbutton.setAttribute("onclick", "buttonClickCounter()");
-        newbutton.type = "button";
-        test8.appendChild(newbutton);
-        newbutton.innerHTML = answer1[count][n];
-    }
-    
-}
+
+
