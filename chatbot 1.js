@@ -32,7 +32,7 @@ function toCreateNewButton(count) {
 }
 
 function removingExtraButtons(count) {
-    alert('in the remove function')
+    // alert('in the remove function')
     var parent = document.getElementById("buttonrows");
     var child = document.getElementsByClassName("btn1");
     var childn = child.length - 1;

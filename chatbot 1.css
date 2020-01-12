@@ -8,8 +8,31 @@ button.btn1 {
     display: block;
     margin: auto; 
     text-align: center;
+    max-height: 100px;
+    min-height: 100px;
 }
 
+div.chat-box-space {
+    height: 300px;
+}
+
+div.input {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+input.inputbox {
+    width: 20rem;
+    border-radius: 10px;
+    height: 2.5rem;
+    line-height: 2rem;
+    border-color: rgb(100, 124, 190);
+    border-width: 2px;
+}
+
+/* .inputspace {
+    position: absolute;
+} */
 /* p,
 h1 {
     display: block;
