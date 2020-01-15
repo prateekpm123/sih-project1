@@ -1,6 +1,6 @@
 //////////////////   Questions  ///////////////////////
 var list = ["What section is your complaint about", "What is category is your complaint about",
-    "Teaching Staff or Non-Teaching Staff ", "What is the department", "What is the name of the staff", "Now write a detailed description of your complaint", "Do you wanna show your name or not"
+    "Teaching Staff or Non-Teaching Staff ", "What is the department", "What is the name of the staff", "Now write a detailed description of your complaint", "Do you wanna show your name or not"," THANK YOU !!!"
 ];
 
 ///////////////////////////  Answers  /////////////////////////////
@@ -11,7 +11,7 @@ var answer2 = [
     ['IT', 'CS', 'EXTC', 'EX', 'MECH'],
     [],
     [],
-    ['yes', 'no']
+    ['yes', 'no'],[]
 ];
 
 let para = document.getElementById('para');
@@ -81,6 +81,19 @@ function buttonClickCounter() {
         let inputfield = document.getElementById('inputbox1');
         inputfield.setAttribute("style", "display: block;");
     }
+
+    if (count == 7) {
+        inputbox = document.getElementById('inputbox1');
+        inputbox.setAttribute('style', 'display: none;');
+        var test8 = document.getElementById('buttonrows');
+        var newbutton = document.createElement('button');
+        newbutton.setAttribute("onclick", "makeANewComplaint()");
+        newbutton.className = "btn btn-primary btn1";
+        newbutton.textContent = "Wanna make complaint ?"
+        newbutton.type = "button";
+        test8.appendChild(newbutton);
+    } else {}
+
     ID = printID();
     // alert(ID);
     creationOnCanvas(ID, count);
@@ -132,6 +145,10 @@ function creationOnCanvas(ID, level) {
 
 }
 
+function makeANewComplaint() {
+    count = 0;
+    buttonClickCounter();
+}
 
 //////////////// Taking the Data from the text box ///////////////////
 
@@ -169,6 +186,7 @@ if (count == 5) {
 } else {
     input.addEventListener('keypress', getTheInput);
 }
+
 
 
 

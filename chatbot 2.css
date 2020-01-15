@@ -12,6 +12,10 @@ button.btn1 {
     min-height: 100px;
 }
 
+#buttonrows {
+    /* display: inline-flex; */
+    overflow: open;
+}
 
 div.chat-box-space {
     height: 300px; 
@@ -59,7 +63,7 @@ input.inputbox {
 p.canvastext {
     margin: 5px;
     font-weight: 700;
-    color: rgb(0, 0, 0);
+    color: rgb(46, 44, 44);
 }
 
 div.level1 {
