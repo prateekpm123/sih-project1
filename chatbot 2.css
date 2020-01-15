@@ -1,0 +1,100 @@
+button.btn1 {
+    display: block;
+    margin: auto;
+    /* align-items: center; */
+}
+
+#para{
+    display: block;
+    margin: auto; 
+    text-align: center;
+    max-height: 100px;
+    min-height: 100px;
+}
+
+
+div.chat-box-space {
+    height: 300px; 
+}
+
+div.input {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+#inputbox2 {
+  
+    width: 95%;
+    border-radius: 10px;
+    height: 8rem;
+    line-height: 2rem;
+    border-color: rgb(100, 124, 190);
+    border-width: 2px;
+    margin: auto;
+    box-sizing: border-box;
+    display: none;
+}
+
+input.inputbox {  
+    width: 95%;
+    border-radius: 10px;
+    height: 2.5rem;
+    line-height: 2rem;
+    border-color: rgb(100, 124, 190);
+    border-width: 2px;
+}
+
+#submitbtn {
+    
+    margin: 15px auto 5px auto;
+    display: none;    
+}
+
+/* ########## Canvas part ########## */
+ 
+.canvas {
+    background-color: brown;
+}
+
+p.canvastext {
+    margin: 5px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+
+div.level1 {
+    margin: 5px;
+}
+
+/* p.hirarchyFont {
+    font-weight: bold;
+    text-align: center;
+    margin: 5px 0px 5px 0px;
+}
+
+div.hirarchyCol {
+    margin: 15px 0px 15px 0px;
+    display: flex;
+}
+
+ div.staffcol {
+    margin: 10px 0px 10px 0px;
+ } 
+
+ div.deptcol , div.studentscol{
+    margin: 15px 0px 15px 0px;
+ }
+
+div.case1 {
+    display: flex;
+}
+
+div.row2 {
+    box-sizing: border-box;
+}
+
+
+.midcancol {
+    background-color: yellowgreen!important;
+} */
+
