@@ -30,6 +30,43 @@ input.inputbox {
     border-width: 2px;
 }
 
+
+.canvas {
+    background-color: brown;
+}
+
+p.hirarchyFont {
+    font-weight: bold;
+    text-align: center;
+    margin: 5px 0px 5px 0px;
+}
+
+div.hirarchyCol {
+    margin: 15px 0px 15px 0px;
+    display: flex;
+}
+
+ div.staffcol {
+    margin: 10px 0px 10px 0px;
+ } 
+
+ div.deptcol , div.studentscol{
+    margin: 15px 0px 15px 0px;
+ }
+
+div.case1 {
+    display: flex;
+}
+
+div.row2 {
+    box-sizing: border-box;
+}
+
+
+.midcancol {
+    /* background-color: yellowgreen!important; */
+}
+
 /* .inputspace {
     position: absolute;
 } */
