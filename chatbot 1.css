@@ -21,7 +21,7 @@ div.input {
     margin-top: 1rem;
 }
 
-input.inputbox {
+input.inputbox {  
     width: 95%;
     border-radius: 10px;
     height: 2.5rem;
@@ -30,7 +30,7 @@ input.inputbox {
     border-width: 2px;
 }
 
-
+ 
 .canvas {
     background-color: brown;
 }
