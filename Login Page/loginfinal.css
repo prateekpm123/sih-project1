@@ -10,7 +10,7 @@ html
 body {
 	font-family: Helvetica;	
 	-webkit-font-smoothing: antialiased;
-	background:url(../images/bg.jpg);
+	/* background:url(bg.jpg); */
 	background-repeat: no-repeat;
     background-size: cover;
 	height: 100%;
