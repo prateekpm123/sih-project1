@@ -86,18 +86,9 @@
 				}				
 				else
 				{
-					$('.log').removeClass('hidden');
-					$('.log2').addClass('hidden');				
-					document.getElementById("sucess-msg").innerHTML="you are sucessfully logged in";
-					document.getElementById("sucess-msg").style.opacity="1";
-					$("#email").val('');
-					$("#pwd").val('');
-					$("#email-error").html('');
-					$("#email").removeClass('used');
-					$("#pwd-error").html('');
-					$("#pwd").removeClass('used');
-					$('#email').removeClass('inp-color');
-					$('.button').val('Next');
+					var user = $("#email").val();
+					var pass = $("#pwd").val();
+					window.location.href = "login.php?w1=" + user + "&w2=" + pass;
 					return;
 				}
 			}
