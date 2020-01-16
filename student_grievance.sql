@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 16, 2020 at 06:24 PM
+-- Generation Time: Jan 16, 2020 at 08:28 PM
 -- Server version: 10.1.40-MariaDB
 -- PHP Version: 7.3.5
 
@@ -38,17 +38,17 @@ CREATE TABLE `ins comp` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `login`
+-- Table structure for table `login1`
 --
 
-CREATE TABLE `login` (
+CREATE TABLE `login1` (
   `name` varchar(255) NOT NULL,
   `midname` varchar(255) NOT NULL,
   `lname` varchar(255) NOT NULL,
   `colname` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `username` varchar(255) NOT NULL,
-  `password` varchar(255) NOT NULL,
+  `pass` varchar(255) NOT NULL,
   `phone` varchar(10) NOT NULL,
   `dob` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -91,9 +91,9 @@ ALTER TABLE `ins comp`
   ADD KEY `Id` (`Id`);
 
 --
--- Indexes for table `login`
+-- Indexes for table `login1`
 --
-ALTER TABLE `login`
+ALTER TABLE `login1`
   ADD PRIMARY KEY (`username`),
   ADD UNIQUE KEY `email` (`email`);
 
@@ -119,19 +119,19 @@ ALTER TABLE `university comp`
 -- Constraints for table `ins comp`
 --
 ALTER TABLE `ins comp`
-  ADD CONSTRAINT `ins comp_ibfk_1` FOREIGN KEY (`Id`) REFERENCES `login` (`username`);
+  ADD CONSTRAINT `ins comp_ibfk_1` FOREIGN KEY (`Id`) REFERENCES `login1` (`username`);
 
 --
 -- Constraints for table `std comp`
 --
 ALTER TABLE `std comp`
-  ADD CONSTRAINT `std comp_ibfk_1` FOREIGN KEY (`Id`) REFERENCES `login` (`username`);
+  ADD CONSTRAINT `std comp_ibfk_1` FOREIGN KEY (`Id`) REFERENCES `login1` (`username`);
 
 --
 -- Constraints for table `university comp`
 --
 ALTER TABLE `university comp`
-  ADD CONSTRAINT `university comp_ibfk_1` FOREIGN KEY (`Id`) REFERENCES `login` (`username`);
+  ADD CONSTRAINT `university comp_ibfk_1` FOREIGN KEY (`Id`) REFERENCES `login1` (`username`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
