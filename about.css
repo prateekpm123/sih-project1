@@ -1,0 +1,74 @@
+body {
+    background-image:url("assests/3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:650px;
+
+    /*border-bottom-left-radius: 0 0 85% 85% / 30% ;*/
+    border-radius: 0 0 85% 85% / 30% ;
+    
+    /*background-image: linear-gradient(135deg, #9f0f5ff69 10%, #fd5e086b 100%);*/
+
+}
+
+.myh12{
+    color:white;
+    text-align: center;
+    font-family: 'Times New Roman';
+    font-size: 70px;
+    margin-top: 70px;
+}
+
+.mynav {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.container.mycontainer{
+    margin-top: 25%;
+    margin-left: 8%;
+}
+
+.myh1{
+    font-family: 'Times New Roman';
+    text-align: center;
+    color:rgb(221, 67, 119);
+
+}
+
+.fa.fa-heart{
+    font-size: 40px;
+    margin-left: 48%;
+    color: #e20e55;
+}
+
+.row.myrow {
+    margin-left: 3%;
+    margin-right: 5%;
+    text-align: justify;
+}
+
+
+.container.mycontainer2{
+    border-radius: 5%;
+    padding-right: 10%;
+    background-color: #f5e3e9;
+    width: 1200px;
+    height: 1100px;
+    left: 5%;
+    padding: 20px;
+    top: 900px;
+    bottom: 220px;
+    position: absolute;
+    margin-bottom: 20px;
+    margin: none;
+}
+
+.my_img_story{
+    margin-left: 10%;
+    border-image-width: 2px;
+}
+
+background-image {
+    display: inline-block;
+    clip-path: circle(100% at 50% -50%);
+}
