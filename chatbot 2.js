@@ -148,7 +148,7 @@ function creationOnCanvas(ID, level) {
 function makeANewComplaint() {
     count = 0;
     buttonClickCounter();
-}
+} 
 
 //////////////// Taking the Data from the text box ///////////////////
 
