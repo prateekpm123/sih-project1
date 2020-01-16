@@ -48,6 +48,6 @@ function buttoncounter() {
     ++count;
 
     nextbutton(count);
-    // deleteprevious();
+    deleteprevious();
 }
 
