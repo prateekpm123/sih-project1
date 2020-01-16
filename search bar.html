@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../bootstrap-4.4.1-dist/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="../bootstrap-4.4.1-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="search bar.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.css">
   <title>My Contacts</title>
 </head>
@@ -60,34 +63,23 @@
       </li>
     </ul>
   </div>
-
-  <script>
-    // Get input element
-    let filterInput = document.getElementById('filterInput');
-    // Add event listener
-    filterInput.addEventListener('keyup', filterNames);
-
-    function filterNames() {
-      // Get value of input
-      let filterValue = document.getElementById('filterInput').value.toUpperCase();
-
-      // Get names ul
-      let ul = document.getElementById('names');
-      // Get lis from ul
-      let li = ul.querySelectorAll('li.collection-item');
-
-      // Loop through collection-item lis
-      for (let i = 0; i < li.length; i++) {
-        let a = li[i].getElementsByTagName('a')[0];
-        // If matched
-        if (a.innerHTML.toUpperCase().indexOf(filterValue) > -1) {
-          li[i].style.display = '';
-        } else {
-          li[i].style.display = 'none';
-        }
-      }
-
-    }
+  <div class="card flashcardbox">
+    <h5 class="card-header">Featured</h5>
+    <div class="card-body">
+      <h5 class="card-title">Special title treatment</h5>
+      <p class="card-text" id="cardpara"></p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="../bootstrap-4.4.1-dist/js/bootstrap.min.js">
+  </script>
+  <script src="search bar.js">
   </script>
 </body>
 
