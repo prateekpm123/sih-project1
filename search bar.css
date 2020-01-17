@@ -14,3 +14,11 @@ div.flashcardbox {
 div.card {
     /* display: none!important; */
 }
+
+li.collection-item {
+    display: none;
+}
+
+.collection-header {
+    display: none;
+}

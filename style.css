@@ -1,10 +1,15 @@
-body.home-body {
-  background-color: rgb(228, 230, 238);
-}
+/* body {
+  background-image: url(assests/image1.jpg);
+} */
 
 nav.navbar , nav.navbar-dark{
-  background: transparent;
+  background: rgba(112, 90, 109, 0.767);
 }
+
+.bg-dark {
+  background: rgba(0, 0, 0, 0.8)!important;
+}
+
 /* ######## The big text in the middle of the page ######## */
 .jumbotron {
   text-align: center;
@@ -15,8 +20,11 @@ nav.navbar , nav.navbar-dark{
 }
 
 .container-fluid {
-  background: rgb(181, 187, 180);
+  /* background-image: url(assests/image1.jpg); */
+  background-color: rgb(176, 197, 125);
   width: 100%;
+  height: 100%;
+  background-repeat: cover;
 }
 
 /* ########### GRIEVENCE AND TRACK GREVIENCE Buttons ############ */
@@ -27,6 +35,7 @@ nav.navbar , nav.navbar-dark{
 
 button.complaint-btn {
   min-width: 144px;
+  margin-bottom: 30px;
 }
 
 .btn-col-2 {

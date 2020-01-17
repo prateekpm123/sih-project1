@@ -19,8 +19,12 @@ function filterNames() {
         let a = li[i].getElementsByTagName('a')[0];
         // If matched
         if (a.innerHTML.toUpperCase().indexOf(filterValue) > -1) {
-            li[i].style.display = '';
+            li[i].style.display = 'block';
         } else {
+            li[i].style.display = 'none';
+        }
+
+        if (filterValue == ""){
             li[i].style.display = 'none';
         }
     }
